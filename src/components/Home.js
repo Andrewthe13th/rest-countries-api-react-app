@@ -14,7 +14,7 @@ const Home = props => {
   }
 
   async function fetchCountriesByName(name) {
-    if(name === ""){return}
+    if(name === ""){fetchCountries();return}
 
     const response = await fetch(`https://restcountries.com/v3.1/name/${name}?fields=name,population,region,capital,flags,cca3`);
     if(response.status !== 200){setSearch(false);return;}
