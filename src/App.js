@@ -27,15 +27,8 @@ function App() {
   const [country,setCountry] = useState("");
   const [mainPage,setMainPage] = useState("Home");
   const [darkMode,setDarkMode] = useState(false);
-  const [rerender,setRerender] = useState(false);
 
   const openHomePage = () => {
-    console.log("Trying to reset Home page");
-    if(mainPage === "Home"){
-      console.log("Rerender should reset");
-      setRerender(!darkMode);
-    }else
-    console.log("should only be called in details page");
       setMainPage('Home');
   }
   const openDetailsPage = (country) => {
