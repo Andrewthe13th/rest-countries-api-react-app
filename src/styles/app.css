@@ -31,6 +31,8 @@ html{
   --input-color: ;
   --border-radius-default: 5px;
   --box-shadow: ;
+
+  --media-desktop:1100px;
 }
 
 body{
@@ -49,6 +51,7 @@ body{
   --elements-color: hsl(209, 23%, 22%);
   --bg-color: hsl(207, 26%, 17%);
   --input-color: var(--elements-color);
+  --box-shadow: rgba(32, 32, 32, 0.8) 0px 0px 7px 0px;
 }
 
 .body{

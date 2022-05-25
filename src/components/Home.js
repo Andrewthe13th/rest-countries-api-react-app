@@ -43,8 +43,10 @@ const Home = props => {
     <main>
       <div className="container">
         <div className='filters'>
-          <SearchBar bsearchResult={search}  getCountries={fetchCountriesByName}></SearchBar>
-          <DropDown getCountries={fetchCountriesByRegion}></DropDown>
+          <div className="filter-group">
+            <SearchBar bsearchResult={search}  getCountries={fetchCountriesByName}></SearchBar>
+            <DropDown getCountries={fetchCountriesByRegion}></DropDown>
+          </div>
           <div className="country-container">
             { countries.length !== 0
             ? countries.map((e) => <CountryCard openDetailsPage={props.openDetailsPage} countryInfo={e}></CountryCard>)

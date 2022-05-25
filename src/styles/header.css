@@ -27,3 +27,12 @@ header button{
   align-items: center;
   gap: 0.2em;
 }
+
+@media(min-width: 675px){
+  header .container{
+    padding: 1.8em 5%;
+  }
+  header button{
+    font-size: 1.2rem;
+  }
+}

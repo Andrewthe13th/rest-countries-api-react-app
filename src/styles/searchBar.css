@@ -36,3 +36,9 @@
 .searchFailed:focus-within{
   outline-color: red;
 }
+
+@media(min-width: 675px){
+  .searchBar{
+    max-width: 30em;
+  }
+}

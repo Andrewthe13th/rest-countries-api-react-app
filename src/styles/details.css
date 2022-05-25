@@ -4,7 +4,7 @@
 }
 
 .details-page .container{
-  padding: 3em  1.7em;
+  padding: 3em  5%;
 }
 
 .back-button{
@@ -37,6 +37,12 @@
 
 .details-flag{
   display: block;
+  max-width: 30em;
+  grid-area: flag;
+}
+
+.details-info{
+  grid-area: details;
 }
 
 .details-flag img{
@@ -85,3 +91,40 @@
   box-shadow: var(--box-shadow);
 }
 
+@media(min-width: 1000px){
+  .country{
+    grid-gap: 5%;
+    grid-template:
+    "flag details" max-content
+    / minmax(100px,50em) minmax(100px,50em);
+    ;
+    justify-content: center;
+  }
+
+  .details-flag{
+    max-width:none;
+    display: block;
+    align-self: center;
+  }
+
+  .details-info{
+    align-self: center;
+  }
+
+  .country-details{
+    padding-right: 4em;
+    flex-flow: row wrap;
+    gap: 2.5em minmax(5%,4em);
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+
+  section .top{
+    width: min-content;
+  }
+
+  section .middle{
+    width: min-content;
+  }
+
+}
