@@ -1,0 +1,16 @@
+main .container{
+  padding: 1em;
+}
+
+.filters{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.country-container{
+  padding: 1em 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}

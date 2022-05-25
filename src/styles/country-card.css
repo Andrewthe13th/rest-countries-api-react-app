@@ -1,0 +1,25 @@
+.country_card{
+  background-color: var(--elements-color);
+  border-radius: var(--border-radius-default);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+.card-img img{
+  display: block;
+}
+
+.card-details{
+  padding: 2em 1.5em;
+}
+
+.name{
+  font-size: 1.3rem;
+  font-weight: var(--fw-extrabold);
+  margin-bottom: 0.6em;
+}
+
+.detail-name{
+  font-weight: var(--fw-semibold);
+  margin-right: 0.3rem;
+}

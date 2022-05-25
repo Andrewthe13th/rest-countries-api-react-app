@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+*,*:before,*:after{box-sizing: border-box;}
+html,body,p,h1,h2,h3,ul,ol,li{margin: 0;}
+a{text-decoration: none;}
+img{width: 100%;}
+html,button{font-size: 16px;font-family: 'Nunito Sans', sans-serif;}
+ul,ol,li{padding: 0;list-style: none;text-align: left;}
+html{
+  height: 100%;
+}
+
+:root{
+  --lm-text: hsl(200, 15%, 8%);
+  --dm-text: hsl(0, 0%, 100%);
+  --lm-elements: hsl(0, 0%, 100%);
+  --dm-elements: hsl(209, 23%, 22%);
+  --lm-bg: hsl(0, 0%, 98%);
+  --dm-bg: hsl(207, 26%, 17%);
+  --lm-input: hsl(0, 0%, 52%);
+  --dm-input: hsl(0, 0%, 100%);
+  --fs-detail: 1rem;
+  --fs-homepage: 0.875rem;
+  --fw-light: 300;
+  --fw-semibold: 600;
+  --fw-extrabold: 800;
+
+  --text-color: ;
+  --elements-color: ;
+  --bg-color: ;
+  --input-color: ;
+  --border-radius-default: 5px;
+  --box-shadow: ;
+}
+
+body{
+  /* background-color: var(--bg-color); */
+  /* Default light color */
+  --text-color: hsl(200, 15%, 8%);
+  --elements-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(0, 0%, 98%);
+  --input-color: hsl(0, 0%, 100%);
+  /* --input-color: hsl(0, 0%, 52%); */
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 7px 0px;
+}
+
+.dark{
+  --text-color: hsl(0, 0%, 100%);
+  --elements-color: hsl(209, 23%, 22%);
+  --bg-color: hsl(207, 26%, 17%);
+  --input-color: var(--elements-color);
+}
+
+.body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+button{
+  border-color: transparent;
+  cursor: pointer;
+  font-size: var(--fs-homepage);
+}

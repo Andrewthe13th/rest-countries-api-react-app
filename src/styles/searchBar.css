@@ -1,0 +1,38 @@
+.searchBar{
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: var(--input-color);
+  padding: 1em 1.5em;
+  border: 1px solid transparent;
+  gap: 2em;
+  border-radius: var(--border-radius-default);
+  box-shadow: var(--box-shadow);
+}
+
+.searchBar:focus-within{
+  outline: 5px solid blue;
+}
+
+.searchBar input{
+  color: var(--text-color);
+  flex-grow: 1;
+  display: block;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+}
+
+.searchBar input::placeholder{
+  opacity: 1;
+}
+
+.searchFailed{
+  border: 1px solid red;
+}
+
+.searchFailed:focus-within{
+  outline-color: red;
+}

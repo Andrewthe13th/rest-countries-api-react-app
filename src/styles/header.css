@@ -1,0 +1,29 @@
+header{
+  
+}
+
+header .container{
+  background-color: var(--elements-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.8em 1em;
+  position:relative;
+  box-shadow: var(--box-shadow);
+}
+
+header button{
+  color: var(--text-color);
+  background-color: transparent;
+  
+}
+
+.homepage{
+  font-weight: var(--fw-extrabold);
+}
+
+.darkmode{
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
